@@ -11,7 +11,7 @@
   - @goals.each do |goal|
     %tr
       %td= goal.title
-      %td= goal.description
+      %td= truncate(strip_tags(goal.description), length: 115)
       %td= link_to 'Show', goal, class: "btn btn-default btn-sm"
       %td= link_to 'Edit', edit_goal_path(goal), class: "btn btn-default btn-sm"
       %td= link_to 'Delete', goal, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: "btn btn-danger btn-sm"

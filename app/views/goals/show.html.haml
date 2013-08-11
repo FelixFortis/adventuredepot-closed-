@@ -1,12 +1,17 @@
 %p#notice= notice
 
-%p
-  %b Title:
-  = @goal.title
-%p
-  %b Description:
-  = @goal.description
+%table.table
+  %tr
+    %th
+      %strong Title:
+    %th
+      %strong Description:
+  %tr
+    %td
+      = @goal.title
+    %td
+      = @goal.description
 
-= link_to 'Edit', edit_goal_path(@goal)
-\|
-= link_to 'Back', goals_path
+= link_to 'Edit', edit_goal_path(@goal), class: "btn btn-default btn-sm"
+
+= link_to 'Back', goals_path, class: "btn btn-default btn-sm"
