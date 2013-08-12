@@ -12,5 +12,20 @@
   .table
     = f.label :description
     = f.text_area :description, rows: 6
+  .table
+    = f.label :measurement
+    = f.text_field :measurement
+  .table
+    = f.label :steps
+    = f.text_area :steps
+  .table
+    = f.label :tags
+    = f.text_field :tags
+  .table
+    = f.label :start_date
+    = f.text_field :start_date
+  .table
+    = f.label :end_date
+    = f.text_field :end_date
   .actions
     = f.submit 'Save', class: 'btn btn-success btn-sm'
