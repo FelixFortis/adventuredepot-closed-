@@ -10,4 +10,6 @@
 #
 
 class Goal < ActiveRecord::Base
+  validates :title, uniqueness: true
+  validates :title, :description, presence: true
 end

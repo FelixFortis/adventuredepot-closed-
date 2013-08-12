@@ -18,15 +18,19 @@ body {
   padding-top: 60px;
   /* background: url("fleurs-bg.gif"); */
 }
-.table-striped > tbody > tr:nth-child(even) > td,
-.table-striped > tbody > tr:nth-child(even) > th {
-  background-color: #ffffff;
-}
 .btn-danger {
   color: #ffffff !important;
 }
 .btn-success {
   color: #ffffff !important;
+}
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #ffffff;
+}
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
 }
 /* Overriding styles end */
 
