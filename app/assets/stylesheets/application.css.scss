@@ -32,6 +32,9 @@ body {
   @extend .control-group;
   @extend .error;
 }
+.w100pc {
+  width: 100%;
+}
 /* Overriding styles end */
 
 @import "bootstrap-responsive";
