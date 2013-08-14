@@ -23,7 +23,7 @@ describe GoalsController do
   # This should return the minimal set of attributes required to create a valid
   # Goal. As you add validations to Goal, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "title" => "MyString" } }
+  let(:valid_attributes) { { "title" => "Buy a castle", "description" => "Buy and old rennovated castle", "tags" => "have, property, history", "measurement" => "Castle needs to have stood for at least 400 years and be remotely siege-proof", "steps" => "100/10/3/1 rule" } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
