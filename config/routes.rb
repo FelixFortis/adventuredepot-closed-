@@ -1,4 +1,5 @@
 Adventuredepot::Application.routes.draw do
+  get "global_goals/index"
   resources :goals
 
   # The priority is based upon order of creation: first created -> highest priority.
